@@ -85,6 +85,7 @@ bot.on('message', msg=>{
 		if(!args[1]) return msg.channel.sendMessage('?');
         	let dmGuild = msg.guild;
 			var message = msg.content.slice(22);
+			if(!dmGuild.members) return msg.channel.send("Nigga I can't do that in DM's");
 			let memberarray = dmGuild.members.array();
 			let membercount = memberarray.length;
 			console.log(`Responding to ${msg.author.username} :  Sending message to all ${membercount} members of ${dmGuild.name}.`)
