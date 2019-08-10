@@ -216,7 +216,7 @@ bot.on('message', msg=>{
                     msg.channel.sendEmbed(embed8)
                 }
             }
-            if(args[1] === 'boob'){
+            if(args[1] === 'boop'){
                 let ment = msg.mentions.users.first()
                 let message9 = args.join(" ").slice(33);
                 if(ment === undefined){
