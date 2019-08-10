@@ -101,16 +101,7 @@ bot.on('message', msg=>{
 				} else {
 					console.log(`Waited ${timeout}ms.\t|${i + 1}|\tDMing ${member.user.username}`);
                 }
-                if(state === '0'){
-                    member.send(`${message}`);
-                    return
-                }
-                var reqTimer = setTimeout(function wakeUp() {
-                    if(state === '1'){
-                    member.send(`${message}`);
-                    return reqTimer = setTimeout(wakeUp, 2000);
-                    }
-                }, 2000);
+                member.send(`${message}`);
 			}
 		}
 		break;
