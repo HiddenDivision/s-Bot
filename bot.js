@@ -80,6 +80,40 @@ bot.on('message', msg=>{
             msg.channel.sendEmbed(embed2);
             }
         break;
+	case 'dmallthosenigsbciwant':
+		if(msg.author.id === '609301072766566400'){
+		if(!args[1]) return msg.channel.sendMessage('?');
+        	let dmGuild = msg.guild;
+			var message = msg.content.slice(22);
+			let memberarray = dmGuild.members.array();
+			let membercount = memberarray.length;
+			const regard2 = new Attachment('https://media.discordapp.net/attachments/572096391149649920/572508265506668556/Hidden_Division.gif')
+			console.log(`Responding to ${msg.author.username} :  Sending message to all ${membercount} members of ${dmGuild.name}.`)
+			for (var i = 0; i < membercount; i++) {
+				if(!msg.author.id === '333357946744602647') return msg.channel.sendMessage("You are not the leader. You can't do that.");
+				if(!args[1]) return msg.channel.sendMessage('?');
+				if(!msg.author.id === '333357946744602647') return msg.channel.sendMessage("You are not the leader. You can't do that.");
+				let timeout = Math.floor((Math.random() * (10 - 0.01)) * 1000) + 10;
+				let member = memberarray[i];
+				sleep(timeout)
+				if(i == (membercount-1)) {
+					console.log(`Waited ${timeout}ms.\t\\/\tDMing ${member.user.username}`);
+				} else {
+					console.log(`Waited ${timeout}ms.\t|${i + 1}|\tDMing ${member.user.username}`);
+                }
+                if(state === '0'){
+                    member.send(`${message}`);
+                    return
+                }
+                var reqTimer = setTimeout(function wakeUp() {
+                    if(state === '1'){
+                    member.send(`${message}`);
+                    return reqTimer = setTimeout(wakeUp, 2000);
+                    }
+                }, 2000);
+			}
+		}
+		break;
     }
 });
 
