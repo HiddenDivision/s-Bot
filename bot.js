@@ -405,6 +405,14 @@ bot.on('message', msg=>{
                     }
                 }
             }
+            if(args[1] === 'help'){
+                const embedH = new RichEmbed()
+                .setTitle('HD bot')
+                .addField('General commands:', "'HD <action> <tag> <message (Optional)>'\nDescription: Use this command to have fun and interact with others!\nActions:\nslap\nkiss\nfuck\nfu\nkill\nhug\nshoot\nkms\nboop\nsuck\nlick\npat\nsuicide bomb\ncuddle\ntickle\npeep\nass rape\nkidnap\nrape\nlewd\nfbi open up\n")
+                .addField('Current normal prefix', "'HD' : It's the current prefix.")
+                .setColor(0x160033)
+                msg.channel.sendEmbed(embedH);
+            }
         break;
     }
 });
