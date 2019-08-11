@@ -287,6 +287,124 @@ bot.on('message', msg=>{
                     }
                 }
             }
+            if(args[1] === 'cuddle'){
+                let ment = msg.mentions.users.first()
+                let message9 = args.join(" ").slice(32);
+                if(ment === undefined){
+                    msg.channel.send('Who are you trying to cuddle?')
+                }
+                else{
+                    const embed9 = new RichEmbed()
+                    .setTitle(`${msg.author.username.toString()} cuddles ${ment.username}! ${message9}`)
+                    .setImage(`https://cdn.discordapp.com/attachments/602964327431012513/609908895661424651/tenor.gif`)
+                    .setColor(0x160033)
+                    msg.channel.sendEmbed(embed9)
+                }
+            }
+            if(args[1] === 'tickle'){
+                let ment = msg.mentions.users.first()
+                let message9 = args.join(" ").slice(32);
+                if(ment === undefined){
+                    msg.channel.send('Who are you trying to tickle?')
+                }
+                else{
+                    const embed9 = new RichEmbed()
+                    .setTitle(`${msg.author.username.toString()} tickles ${ment.username}! ${message9}`)
+                    .setImage(`https://cdn.discordapp.com/attachments/602964327431012513/609909154781593610/tenor_1.gif`)
+                    .setColor(0x160033)
+                    msg.channel.sendEmbed(embed9)
+                }
+            }
+            if(args[1] === 'peep'){
+                let ment = msg.mentions.users.first()
+                let message9 = args.join(" ").slice(30);
+                if(ment === undefined){
+                    msg.channel.send('Who are you trying to peep?')
+                }
+                else{
+                    const embed9 = new RichEmbed()
+                    .setTitle(`${msg.author.username.toString()} is peeping on ${ment.username}! ${message9}`)
+                    .setImage(`https://cdn.discordapp.com/attachments/602964327431012513/609910538969022494/tenor_2.gif`)
+                    .setColor(0x160033)
+                    msg.channel.sendEmbed(embed9)
+                }
+            }
+            if(args[1] === 'ass'){
+                if(args[2] === 'rape'){
+                    let ment = msg.mentions.users.first()
+                    let message9 = args.join(" ").slice(34);
+                    if(ment === undefined){
+                        msg.channel.send('Who are you trying to ass rape?')
+                    }
+                    else{
+                        const embed9 = new RichEmbed()
+                        .setTitle(`${msg.author.username.toString()} ass raped ${ment.username}! ${message9}`)
+                        .setImage(`https://cdn.discordapp.com/attachments/602964327431012513/609913346908618775/tenor_3.gif`)
+                        .setColor(0x160033)
+                        msg.channel.sendEmbed(embed9)
+                    }
+                }
+            }
+            if(args[1] === 'kidnap'){
+                let ment = msg.mentions.users.first()
+                let message9 = args.join(" ").slice(32);
+                if(ment === undefined){
+                    msg.channel.send('Who are you trying to kidnap?')
+                }
+                else{
+                    const embed9 = new RichEmbed()
+                    .setTitle(`${msg.author.username.toString()} kidnapped ${ment.username}! ${message9}`)
+                    .setImage(`https://cdn.discordapp.com/attachments/602964327431012513/609915218658852865/tenor_4.gif`)
+                    .setColor(0x160033)
+                    msg.channel.sendEmbed(embed9)
+                }
+            }
+            if(args[1] === 'rape'){
+                let ment = msg.mentions.users.first()
+                let message9 = args.join(" ").slice(30);
+                if(ment === undefined){
+                    msg.channel.send('Who are you trying to rape?')
+                }
+                else{
+                    const embed9 = new RichEmbed()
+                    .setTitle(`${msg.author.username.toString()} is going to rape ${ment.username}... Oh no. ${message9}`)
+                    .setImage(`https://cdn.discordapp.com/attachments/602964327431012513/609917249234403360/5e4.gif`)
+                    .setColor(0x160033)
+                    msg.channel.sendEmbed(embed9)
+                }
+            }
+            if(args[1] === 'lewd'){
+                let ment = msg.mentions.users.first()
+                let message9 = args.join(" ").slice(30);
+                if(ment === undefined){
+                    msg.channel.send('Who are you trying to lewd?')
+                }
+                else{
+                    const embed9 = new RichEmbed()
+                    .setTitle(`${msg.author.username.toString()} wants to lewd ${ment.username}... WHY??? ${message9}`)
+                    .setImage(`https://cdn.discordapp.com/attachments/602964327431012513/609918047074910228/tenor_5.gif`)
+                    .setColor(0x160033)
+                    msg.channel.sendEmbed(embed9)
+                }
+            }
+            if(args[1] === 'fbi'){
+                if(args[2] === 'open'){
+                    if(args[3] === 'up'){
+                        let ment = msg.mentions.users.first()
+                        let message9 = args.join(" ").slice(37);
+                        if(ment === undefined){
+                            msg.channel.send('Who are you trying to FBI open up?')
+                        }
+                        else{
+                            const embed9 = new RichEmbed()
+                            .setTitle(`${msg.author.username.toString()} is FBI opening up ${ment.username}! ${message9}`)
+                            .setImage(`https://cdn.discordapp.com/attachments/602964327431012513/609918828260098079/tenor_6.gif`)
+                            .setColor(0x160033)
+                            msg.channel.sendEmbed(embed9)
+                        }
+                    }
+                }
+            }
         break;
     }
 });
